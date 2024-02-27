@@ -28,7 +28,7 @@ requirements:
     - radioactivedecay >=0.4.16
     - flatdict
     - xmltodict
-    - tables
+    - pytables
 
 test:
   imports:
