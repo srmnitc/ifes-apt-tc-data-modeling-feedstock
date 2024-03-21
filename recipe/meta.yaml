@@ -1,5 +1,5 @@
 {% set name = "ifes-apt-tc-data-modeling" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ifes_apt_tc_data_modeling-{{ version }}.tar.gz
-  sha256: a289e0c9decdea90976ecedc8755cb78667c6fcb1e9b431dd1c33edbbb7dbafe
+  sha256: b9769544c01ed971cdad26d4810207345ecf49854215624ed763da09a760ef47
 
 build:
   noarch: python
