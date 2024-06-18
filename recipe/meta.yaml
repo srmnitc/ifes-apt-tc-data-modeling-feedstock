@@ -26,12 +26,12 @@ requirements:
     - ase >=3.19.0
     - radioactivedecay >=0.4.16
     - pandas
-    - tables
+    - pytables
     - flatdict
     - xmltodict
     - jupyter
     - jupyterlab
-    - jupyterlab_h5web
+    - jupyterlab-h5web
 
 test:
   imports:
