@@ -1,5 +1,5 @@
 {% set name = "ifes-apt-tc-data-modeling" %}
-{% set version = "0.0.9" %}
+{% set version = "0.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ifes_apt_tc_data_modeling-{{ version }}.tar.gz
-  sha256: 196b7c18c40c1b2cd71ea895bc84e21b3ed450cfe346c9ad4e6cc3880f11a25a
+  sha256: 88afa2ee40e39948211dfa1ed512867e652889d6d0a001e0caa268523563fe89
 
 build:
   noarch: python
@@ -16,18 +16,19 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.11
+    - python >=3.8
     - setuptools
     - pip
   run:
-    - python >=3.8,<3.11
+    - python >=3.8
     - h5py >=3.6.0
     - numpy >=1.21.2
     - pandas >=1.3.2
     - ase >=3.19.0
-    - radioactivedecay >=0.4.16
-    - jupyterlab-h5web >=6.5.0
-    - jupyterlab >=3.5.2
+    - radioactivedecay>=0.4.16
+    - jupyter
+    - jupyterlab
+    - jupyterlab-h5web
 
 test:
   imports:
@@ -38,7 +39,7 @@ test:
     - pip
 
 about:
-  summary: Foster exchange about data models and work towards clear specifications of file formats and data models in the research field of atom probe microscopy.
+  summary: Exchange about data models and specifications of file formats in atom probe research.
   license: Apache-2.0
   license_file: LICENSE.txt
   home: https://github.com/atomprobe-tc/ifes_apt_tc_data_modeling
