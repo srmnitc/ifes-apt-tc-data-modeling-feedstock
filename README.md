@@ -7,7 +7,7 @@ Home: https://github.com/atomprobe-tc/ifes_apt_tc_data_modeling
 
 Package license: Apache-2.0
 
-Summary: Foster exchange about data models and work towards clear specifications of file formats and data models in the research field of atom probe microscopy.
+Summary: Exchange about data models and specifications of file formats in atom probe research.
 
 Development: https://github.com/atomprobe-tc/ifes_apt_tc_data_modeling
 
